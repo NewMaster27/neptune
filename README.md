@@ -1,2 +1,2 @@
-# Archnon-project
-Automation script of tor bridges on systemd based linux distros
+# [ archnon-project ]
+[!] Automation/Script of tor as a secure proxy on systemd based linux distros.
