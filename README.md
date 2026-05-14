@@ -3,7 +3,7 @@
 
 [!] Use: git clone https://github.com/NewMaster27/neptune && cd neptune && chmod +x make_bin.sh && sudo ./make_bin.sh && neptune help
 
-[!] Use: wget https://github.com/NewMaster27/Archnon-project/neptune.git && wget https://github.com/NewMaster27/neptune/make_bin.sh && chmod +x make_bin.sh && sudo ./make_bin.sh && neptune help
+[!] Use: wget https://github.com/NewMaster27/neptune/neptune.git && wget https://github.com/NewMaster27/neptune/make_bin.sh && chmod +x make_bin.sh && sudo ./make_bin.sh && neptune help
 
 [!] In addition: 
 - Recommended browsers: falkon, surf, torbrowser, librewolf, badwolf.
