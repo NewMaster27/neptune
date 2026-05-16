@@ -127,31 +127,31 @@ else
    pkgs=( netcat git curl tor iptables nftables iproute2 networkmanager e2fsprogs coreutils util-linux )
       if [[ $(command -v apt) ]]; then
             echo -e "\n${BLUE}[${YELLOW}!${BLUE}]${WHITE} Detected pkg manager: ${GREEN}apt${NC}"
-            sudo apt install "${pkg[@]}" -y
+            sudo apt install "${pkgs[@]}" -y
             wait
       elif [[ $(command -v pacman) ]]; then
             echo -e "\n${BLUE}[${YELLOW}!${BLUE}]${WHITE} Detected pkg manager: ${GREEN}pacman${NC}"
-            sudo pacman -S "${pkg[@]}" --noconfirm
+            sudo pacman -S "${pkgs[@]}" --noconfirm
             wait
 
       elif [[ $(command -v dnf) ]]; then
             echo -e "\n${BLUE}[${YELLOW}!${BLUE}]${WHITE} Detected pkg manager: ${GREEN}dnf${NC}"
-            sudo dnf -y install "${pkg[@]}"
+            sudo dnf -y install "${pkgs[@]}"
             wait
 
       elif [[ $(command -v yum) ]]; then
             echo -e "\n${BLUE}[${YELLOW}!${BLUE}]${WHITE} Detected pkg manager: ${GREEN}yum${NC}"
-            sudo yum -y install "${pkg[@]}"
+            sudo yum -y install "${pkgs[@]}"
             wait
 
       elif [[ $(command -v zypper) ]]; then
             echo -e "\n${BLUE}[${YELLOW}!${BLUE}]${WHITE} Detected pkg manager: ${GREEN}zypper${NC}"
-            sudo zypper install "${pkg[@]}"
+            sudo zypper install "${pkgs[@]}"
             wait
 
       else
             echo -e "\n${RED}[${WHITE}!${RED}]${WHITE} Unsupported package manager, Install packages ${RED}manually.${NC}"
-            echo -e "\n${RED}[${YELLOW}!${RED}]${WHITE} Needed: ${YELLOW}${pkgs[*]}"
+            echo -e "\n${RED}[${YELLOW}!${RED}]${WHITE} Needed: ${YELLOW}${pkgs[@]}"
       fi
 fi
 }
